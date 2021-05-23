@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2021/05/20/text/</url>
-    <content><![CDATA[<h1 id="前端学习"><a href="#前端学习" class="headerlink" title="前端学习"></a>前端学习</h1><h2 id="BootStrap学习"><a href="#BootStrap学习" class="headerlink" title="BootStrap学习"></a>BootStrap学习</h2><h3 id="BootStarp-Table"><a href="#BootStarp-Table" class="headerlink" title="BootStarp-Table"></a>BootStarp-Table</h3><h4 id="1-bootstrap-table设置某列序号自增"><a href="#1-bootstrap-table设置某列序号自增" class="headerlink" title="1.bootstrap-table设置某列序号自增"></a>1.bootstrap-table设置某列序号自增</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">col = [&#123;</span><br><span class="line">    <span class="attr">field</span>: <span class="string">&#x27;SerialNumber&#x27;</span>,</span><br><span class="line">    <span class="attr">title</span>: <span class="string">&#x27;序号&#x27;</span>,</span><br><span class="line">    <span class="attr">formatter</span>: <span class="function"><span class="keyword">function</span> (<span class="params">value, row, index</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> index+<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;]</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>BootStrap</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>20210521</title>
     <url>/2021/05/21/20210521/</url>
     <content><![CDATA[<h1 id="第一篇博客"><a href="#第一篇博客" class="headerlink" title="第一篇博客"></a>第一篇博客</h1><p>继续苦逼的毕业论文……</p>
@@ -22,6 +10,18 @@
       </categories>
       <tags>
         <tag>闲谈</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2021/05/20/text/</url>
+    <content><![CDATA[<h1 id="前端学习"><a href="#前端学习" class="headerlink" title="前端学习"></a>前端学习</h1><h2 id="BootStrap学习"><a href="#BootStrap学习" class="headerlink" title="BootStrap学习"></a>BootStrap学习</h2><h3 id="BootStarp-Table"><a href="#BootStarp-Table" class="headerlink" title="BootStarp-Table"></a>BootStarp-Table</h3><h4 id="1-bootstrap-table设置某列序号自增"><a href="#1-bootstrap-table设置某列序号自增" class="headerlink" title="1.bootstrap-table设置某列序号自增"></a>1.bootstrap-table设置某列序号自增</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">col = [&#123;</span><br><span class="line">    <span class="attr">field</span>: <span class="string">&#x27;SerialNumber&#x27;</span>,</span><br><span class="line">    <span class="attr">title</span>: <span class="string">&#x27;序号&#x27;</span>,</span><br><span class="line">    <span class="attr">formatter</span>: <span class="function"><span class="keyword">function</span> (<span class="params">value, row, index</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> index+<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;]</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>BootStrap</tag>
       </tags>
   </entry>
 </search>
