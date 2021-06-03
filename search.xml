@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>20210521</title>
-    <url>/2021/05/21/20210521/</url>
-    <content><![CDATA[<h1 id="第一篇博客"><a href="#第一篇博客" class="headerlink" title="第一篇博客"></a>第一篇博客</h1><p>继续苦逼的毕业论文……</p>
+    <title>test1</title>
+    <url>/2021/06/03/Reflection-20210603/</url>
+    <content><![CDATA[<h1 id="工作中的思考-20210603"><a href="#工作中的思考-20210603" class="headerlink" title="工作中的思考(20210603)"></a>工作中的思考(20210603)</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>遇到一个匪夷所思的问题，使用ffmpeg命令对音视频、图片等进行处理时，本地可以通过接口调用执行cmd返回一段视频，打包后发布到ECS和K8S多台机器后，在sit环境居然直接挂了。</p>
+<h2 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h2><p>遂在日志中排查问题，将通过埋点获得的命令在k8s上执行，居然也成功了，从过程上看确实是由于这条命令该生成的文件没有生成，但服务器终端手动执行又执行成功，一模一样的命令通过终端执行和通过Java的exec执行会有区别吗？(待排查)</p>
+<p>按道理来说不会有区别，因为Java本身是一次编译到处执行，并不会受到跨平台的影响，本地也是直接路由到docker镜像上。</p>
+<p>还有一种可能是线程池的问题，利用两个线程去跑两个异步任务，有没有可能这个线程被不明原因阻塞，而程序主线程继续执行，导致我们命令执行成功，但文件未写入到服务器中。(待排查)</p>
+<p>也有可能是waitFor方法失效，不过可能性不大。</p>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>我是菜鸡。</p>
 ]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
       <tags>
-        <tag>闲谈</tag>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -22,6 +24,18 @@
       </categories>
       <tags>
         <tag>BootStrap</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>20210521</title>
+    <url>/2021/05/21/20210521/</url>
+    <content><![CDATA[<h1 id="第一篇博客"><a href="#第一篇博客" class="headerlink" title="第一篇博客"></a>第一篇博客</h1><p>继续苦逼的毕业论文……</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>闲谈</tag>
       </tags>
   </entry>
 </search>
